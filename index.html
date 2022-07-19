@@ -2,20 +2,21 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>360º panorama viewer</title>
-  
+  <title>Panoramic Image Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-<a-scene>
-  <a-assets>
-    <img id="panorama" src="https://c1.staticflickr.com/5/4302/35137573294_1287bfd0ae_k.jpg" crossorigin />
-  </a-assets>
-  <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
-</a-scene>
+<!-- Click and drag the screen to move the image -->
+
+<div id="stereo-toggle">Turn VR On</div>
 <!-- partial -->
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/OrbitControls.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/DeviceOrientationControls.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/123879/StereoEffect.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
